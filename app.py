@@ -3,11 +3,11 @@ from datetime import datetime
 
 st.title("スナップ写真撮影アプリ")
 
-image = st.camera_input("カメラで撮影してください")
-
 dept = st.text_input("学科名")
 student_id = st.text_input("学籍番号")
 name = st.text_input("名前")
+
+image = st.camera_input("カメラで撮影してください")
 
 if image is not None:
     if dept and student_id and name:
